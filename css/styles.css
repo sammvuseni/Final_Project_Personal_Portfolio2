@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #a8bbe6;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+.navbar-brand > .material-icons-outlined {
+  font-size: 40px;
+}
+
+.about > .material-icons-outlined {
+  font-size: 50px;
+}
+
+.card > img {
+  height: 250px;
+  object-fit: cover;
+}
+
+main {
+  flex: 1; 
+}
+
+footer {
+  display:center;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  padding: 20px 0;
+  background-color: #d9dfe6;
+  text-align: center; 
+  margin-top: auto;
+}
+
+.col-center {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.col-box {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.col-box i {
+  font-size: 2em;
+}
+
+.col-center .social-icons {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1em;
+}
+
+.col-center .social-icons i {
+  font-size: 2em;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: rgb(62, 17, 224);
+}
+
+body, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.web3form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertica;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .web3form {
+      margin: 20px;
+      padding: 15px;
+  }
+}
+
