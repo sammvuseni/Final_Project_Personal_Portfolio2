@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   background-color: #a8bbe6;
 }
-
+ 
 .material-icons-outlined {
   vertical-align: middle;
   line-height: 1px;
@@ -22,6 +22,11 @@ body {
 }
 
 .card > img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card > video {
   height: 250px;
   object-fit: cover;
 }
@@ -144,4 +149,5 @@ button:hover {
       padding: 15px;
   }
 }
+
 
