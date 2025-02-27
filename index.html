@@ -19,46 +19,30 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-  
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <span class="material-icons-outlined me-1">important_devices</span>
-            Uncle Sam Developer
-          </a>
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-              <li class="nav-item">
-                <a class="nav-link me-lg-3" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-lg-3" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-lg-3" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-lg-3" href="#testimonials">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-lg-3" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <span class="material-icons-outlined me-1">important_devices</span>
+          <span class="d-none d-md-inline">Uncle Sam Developer</span>
+          <span class="d-md-none">Sam Dev</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
       <!-- End Navbar -->
 
       <!-- Hero -->
@@ -85,11 +69,11 @@
               </div>
             </div>
             <div class="col-xl-5 col-xxl-6 justify-content-center">
-              <img class="img-fluid rounded-3 my-5" src="images/logo.jpg" alt="Logo Image">
+               <img class="img-fluid rounded-3 my-5" src="images/logo.jpg" alt="Logo Image">
             </div>
           </div>
         </div>
-      </header>
+      </header>mage">
       <!-- End Hero -->
 
       <main>
@@ -365,12 +349,13 @@
     </div> 
       <!-- End Footer -->
 
-    <!-- Bootstrap JS -->
-    <sc src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
-    
+    <script>
+      // Current year for footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
-        
